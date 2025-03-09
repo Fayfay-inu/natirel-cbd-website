@@ -1,5 +1,34 @@
-// Script pour la navigation mobile
+// Vérification d'âge
 document.addEventListener('DOMContentLoaded', function() {
+    const ageVerification = document.getElementById('age-verification');
+    const ageYesBtn = document.getElementById('age-yes');
+    const ageNoBtn = document.getElementById('age-no');
+    
+    // Vérifier si l'utilisateur a déjà confirmé son âge
+    const ageVerified = localStorage.getItem('age-verified');
+    
+    if (!ageVerified) {
+        ageVerification.style.display = 'flex';
+        document.body.style.overflow = 'hidden'; // Empêcher le défilement
+    } else {
+        ageVerification.style.display = 'none';
+    }
+    
+    ageYesBtn.addEventListener('click', function() {
+        localStorage.setItem('age-verified', 'true');
+        ageVerification.style.opacity = '0';
+        document.body.style.overflow = 'auto'; // Permettre le défilement
+        
+        setTimeout(function() {
+            ageVerification.style.display = 'none';
+        }, 500);
+    });
+    
+    ageNoBtn.addEventListener('click', function() {
+        window.location.href = 'https://www.google.com';
+    });
+    
+    // Script pour la navigation mobile
     const navToggle = document.getElementById('navToggle');
     const navigation = document.getElementById('navigation');
     const backdrop = document.getElementById('backdrop');
@@ -155,4 +184,69 @@ document.addEventListener('DOMContentLoaded', function() {
             hero.style.backgroundPositionY = 50 + (scrollPosition * 0.1) + 'px';
         });
     }
+    
+    // Animation des icônes sociales
+    const socialIcons = document.querySelectorAll('.social-icon, .social-links a');
+    socialIcons.forEach(icon => {
+        icon.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-8px) rotate(8deg)';
+        });
+        
+        icon.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0) rotate(0)';
+        });
+    });
+    
+    // Effet de hover sur les produits
+    const productCards = document.querySelectorAll('.product-card');
+    productCards.forEach(card => {
+        card.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-15px) scale(1.03)';
+            this.style.boxShadow = '0 25px 50px rgba(0, 0, 0, 0.15)';
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0) scale(1)';
+            this.style.boxShadow = '0 15px 30px rgba(0, 0, 0, 0.08)';
+        });
+    });
+    
+    // Animation pour le bouton CTA
+    const ctaButton = document.querySelector('.cta-button');
+    if (ctaButton) {
+        ctaButton.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-5px) scale(1.03)';
+            this.style.boxShadow = '0 10px 20px rgba(0, 0, 0, 0.2)';
+        });
+        
+        ctaButton.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0) scale(1)';
+            this.style.boxShadow = '0 6px 15px rgba(0, 0, 0, 0.15)';
+        });
+    }
+    
+    // Animation pour les badges "Populaire" et "Nouveau"
+    const badges = document.querySelectorAll('.product-badge');
+    badges.forEach(badge => {
+        setInterval(() => {
+            badge.style.transform = 'rotate(45deg) scale(1.1)';
+            setTimeout(() => {
+                badge.style.transform = 'rotate(45deg) scale(1)';
+            }, 500);
+        }, 3000);
+    });
+    
+    // Effet de zoom au survol des images de la galerie
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    galleryItems.forEach(item => {
+        item.addEventListener('mouseenter', function() {
+            const img = this.querySelector('img');
+            img.style.transform = 'scale(1.1)';
+        });
+        
+        item.addEventListener('mouseleave', function() {
+            const img = this.querySelector('img');
+            img.style.transform = 'scale(1)';
+        });
+    });
 });
