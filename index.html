@@ -3,12 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Natirel CBD - Votre boutique de CBD en Guadeloupe</title>
+    <title>NATIRÈL CBD - Votre boutique de CBD en Guadeloupe</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Vérification d'âge -->
+    <div id="age-verification" class="age-verification">
+        <div class="age-verification-content">
+            <h2>Vérification d'âge</h2>
+            <p>Ce site est réservé aux personnes de plus de 18 ans.</p>
+            <p>En entrant sur ce site, vous confirmez avoir 18 ans ou plus.</p>
+            <div class="age-buttons">
+                <button id="age-yes" class="cta-button">J'ai plus de 18 ans</button>
+                <button id="age-no" class="cta-button-secondary">Je n'ai pas 18 ans</button>
+            </div>
+        </div>
+    </div>
+
     <!-- Mobile Navigation -->
     <div class="mobile-nav-toggle" id="navToggle">
         <i class="fas fa-bars"></i>
@@ -19,9 +32,14 @@
             <li><a href="#"><i class="fas fa-home"></i> Accueil</a></li>
             <li><a href="#about"><i class="fas fa-leaf"></i> À Propos</a></li>
             <li><a href="#products"><i class="fas fa-shopping-bag"></i> Produits</a></li>
-            <li><a href="#benefits"><i class="fas fa-heart"></i> Bienfaits</a></li>
+            <li><a href="#benefits"><i class="fas fa-heart"></i> Qualité</a></li>
             <li><a href="#gallery"><i class="fas fa-images"></i> Galerie</a></li>
             <li><a href="#contact"><i class="fas fa-map-marker-alt"></i> Nous Trouver</a></li>
+            <li class="social-nav">
+                <a href="https://www.facebook.com/share/1EM3tFNpU1/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/natirelcbd?utm_source=qr&igsh=bWk0bzk4OHV4bTQz" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@natirelcbd?_t=ZN-8uNdc5fEpuw&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
+            </li>
         </ul>
     </div>
     
@@ -29,16 +47,24 @@
     
     <header>
         <div class="content">
-            <img src="images/logo.png" alt="Logo Natirel CBD" class="logo">
-            <h2>Natirel CBD</h2>
+            <div class="logo-container">
+                <img src="images/logo.png" alt="Logo NATIRÈL CBD" class="logo">
+            </div>
+            <h2>NATIRÈL CBD</h2>
             <p>Votre boutique de CBD naturel en Guadeloupe</p>
+            
+            <div class="social-header">
+                <a href="https://www.facebook.com/share/1EM3tFNpU1/" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/natirelcbd?utm_source=qr&igsh=bWk0bzk4OHV4bTQz" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@natirelcbd?_t=ZN-8uNdc5fEpuw&_r=1" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
+            </div>
         </div>
     </header>
     
     <div class="hero">
         <div class="container">
-            <h1>Bienvenue chez Natirel CBD</h1>
-            <p>Découvrez notre sélection de produits CBD de haute qualité, 100% naturels et cultivés avec soin pour votre bien-être.</p>
+            <h1>Bienvenue chez NATIRÈL CBD</h1>
+            <p>Découvrez notre sélection premium de produits à base de CBD, soigneusement choisis pour votre bien-être. Huiles, fleurs, résines, infusions et bien plus encore : nous vous proposons des produits naturels, conformes à la législation et issus des meilleures cultures.</p>
             <a href="#contact" class="cta-button">Nous contacter</a>
         </div>
     </div>
@@ -48,25 +74,25 @@
         <div class="container">
             <h2 class="section-title">Notre Boutique</h2>
             <div class="info-box">
-                <p>Chez Natirel CBD, nous croyons au pouvoir des produits naturels pour améliorer votre qualité de vie. Notre mission est de vous proposer des produits de CBD de la plus haute qualité, cultivés de manière responsable et respectueuse de l'environnement.</p>
+                <p>Chez NATIRÈL CBD, nous croyons au pouvoir des produits naturels pour améliorer votre qualité de vie. Notre mission est de vous proposer des produits de CBD de la plus haute qualité, conformes à la législation et issus des meilleures cultures.</p>
                 <p>Notre équipe passionnée est là pour vous conseiller et vous accompagner dans votre découverte des bienfaits du CBD.</p>
             </div>
             
             <div class="benefits" id="benefits">
                 <div class="benefit-card">
                     <div class="benefit-icon">
-                        <i class="fas fa-leaf"></i>
+                        <i class="fas fa-check-circle"></i>
                     </div>
-                    <h3 class="benefit-title">100% Naturel</h3>
-                    <p>Tous nos produits sont issus de cultures biologiques sans pesticides ni produits chimiques.</p>
+                    <h3 class="benefit-title">100% Légal</h3>
+                    <p>Produits 100% légaux et conformes aux normes européennes</p>
                 </div>
                 
                 <div class="benefit-card">
                     <div class="benefit-icon">
-                        <i class="fas fa-certificate"></i>
+                        <i class="fas fa-award"></i>
                     </div>
                     <h3 class="benefit-title">Qualité Premium</h3>
-                    <p>Nous sélectionnons rigoureusement nos produits pour vous garantir une qualité et une efficacité optimales.</p>
+                    <p>CBD de haute qualité, issu de cultures contrôlées</p>
                 </div>
                 
                 <div class="benefit-card">
@@ -74,7 +100,7 @@
                         <i class="fas fa-user-friends"></i>
                     </div>
                     <h3 class="benefit-title">Conseils Personnalisés</h3>
-                    <p>Notre équipe d'experts vous guide pour trouver les produits adaptés à vos besoins spécifiques.</p>
+                    <p>Notre équipe d'experts vous guide pour trouver les produits adaptés à vos besoins spécifiques</p>
                 </div>
             </div>
         </div>
@@ -86,39 +112,100 @@
         <div class="leaf-bg leaf-bottom-left"></div>
         <div class="container">
             <h2 class="section-title">Nos Produits</h2>
+            <div class="product-intro">
+                <p>Nous proposons une large gamme de produits à base de CBD :</p>
+            </div>
+            
             <div class="products">
                 <div class="product-card">
                     <div class="product-badge">Populaire</div>
                     <div class="product-image">
-                        <img src="images/produit-huile.jpg" alt="Huile CBD">
+                        <img src="images/produit-fleurs.jpg" alt="Fleurs CBD">
                     </div>
                     <div class="product-info">
-                        <h3 class="product-title">Huile CBD Premium</h3>
-                        <p class="product-desc">Notre huile CBD premium, extraite avec soin pour préserver toutes ses qualités naturelles. Idéale pour une utilisation quotidienne.</p>
-                        <div class="product-price">À partir de 29,90€</div>
+                        <h3 class="product-title">Fleurs de CBD</h3>
+                        <p class="product-desc">Naturelles et aromatiques, nos fleurs de CBD sont sélectionnées avec soin pour leur qualité et leurs arômes authentiques.</p>
                     </div>
                 </div>
                 
                 <div class="product-card">
                     <div class="product-image">
-                        <img src="images/produit-fleurs.jpg" alt="Fleurs CBD">
+                        <img src="images/produit-huile.jpg" alt="Huiles CBD">
                     </div>
                     <div class="product-info">
-                        <h3 class="product-title">Fleurs CBD</h3>
-                        <p class="product-desc">Sélection de fleurs CBD cultivées sans pesticides ni produits chimiques. Arôme authentique et effet relaxant.</p>
-                        <div class="product-price">À partir de 9,90€</div>
+                        <h3 class="product-title">Huiles de CBD</h3>
+                        <p class="product-desc">Pour un bien-être optimal, nos huiles CBD premium sont extraites avec soin pour préserver toutes leurs qualités naturelles.</p>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/produit-resine.jpg" alt="Résines CBD">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Résines et Pollen</h3>
+                        <p class="product-desc">Des concentrés puissants pour les connaisseurs, offrant une expérience intense et des effets optimaux.</p>
                     </div>
                 </div>
                 
                 <div class="product-card">
                     <div class="product-badge">Nouveau</div>
                     <div class="product-image">
-                        <img src="images/produit-infusions.jpg" alt="Infusions CBD">
+                        <img src="images/produit-eliquide.jpg" alt="E-liquides CBD">
                     </div>
                     <div class="product-info">
-                        <h3 class="product-title">Infusions CBD</h3>
-                        <p class="product-desc">Découvrez nos infusions relaxantes aux plantes locales associées au CBD. Parfaites pour une détente en fin de journée.</p>
-                        <div class="product-price">À partir de 14,90€</div>
+                        <h3 class="product-title">E-liquides CBD</h3>
+                        <p class="product-desc">Pour les amateurs de vape, découvrez notre sélection d'e-liquides infusés au CBD de haute qualité.</p>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/produit-infusions.jpg" alt="Thés et Infusions CBD">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Thés et Infusions</h3>
+                        <p class="product-desc">Pour une détente naturelle, nos thés et infusions au CBD vous offrent un moment de relaxation parfait.</p>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/produit-cosmetiques.jpg" alt="Cosmétiques CBD">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Cosmétiques</h3>
+                        <p class="product-desc">Le CBD régénère les cellules de l'épiderme. Découvrez notre gamme de produits cosmétiques enrichis en CBD.</p>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/produit-alimentaire.jpg" alt="Produits Alimentaires CBD">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Produits Alimentaires</h3>
+                        <p class="product-desc">Plusieurs façons d'ingérer du CBD avec notre gamme de produits alimentaires: chocolats, bonbons, miels et plus encore.</p>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/produit-animaux.jpg" alt="Produits pour Animaux">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Pour vos Animaux</h3>
+                        <p class="product-desc">Ils ont le même système endocannabinoïde que nous. Offrez à vos compagnons les bienfaits du CBD avec nos produits spécialisés.</p>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/produit-accessoires.jpg" alt="Accessoires Fumeurs">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Accessoires Fumeurs</h3>
+                        <p class="product-desc">Découvrez notre sélection d'accessoires de qualité pour profiter pleinement de vos produits CBD.</p>
                     </div>
                 </div>
             </div>
@@ -152,7 +239,7 @@
             <h2 class="section-title">Notre Univers</h2>
             <div class="gallery">
                 <div class="gallery-item">
-                    <img src="images/galerie-1.jpg" alt="Boutique Natirel CBD">
+                    <img src="images/galerie-1.jpg" alt="Boutique NATIRÈL CBD">
                 </div>
                 <div class="gallery-item">
                     <img src="images/galerie-2.jpg" alt="Produits CBD">
@@ -161,7 +248,7 @@
                     <img src="images/galerie-3.jpg" alt="Culture CBD">
                 </div>
                 <div class="gallery-item">
-                    <img src="images/galerie-4.jpg" alt="Équipe Natirel CBD">
+                    <img src="images/galerie-4.jpg" alt="Équipe NATIRÈL CBD">
                 </div>
             </div>
         </div>
@@ -172,17 +259,17 @@
             <h2 class="section-title">Nous Trouver</h2>
             <div class="info-box">
                 <h3><i class="fas fa-map-marker-alt"></i> Adresse</h3>
-                <p>Natirel CBD, Guadeloupe</p>
+                <p>NATIRÈL CBD, ZA' de Fort Ile lotissement Nesty 97128 Goyave, Guadeloupe</p>
                 <p>Utilisez Waze pour nous trouver facilement : <a href="https://waze.com/ul/hddu5y8z7j" target="_blank" style="color: var(--primary-color);">Directions via Waze</a></p>
                 
                 <h3><i class="fas fa-clock"></i> Horaires d'ouverture</h3>
-                <p>Lundi - Vendredi: 9h00 - 18h00</p>
-                <p>Samedi: 10h00 - 17h00</p>
-                <p>Dimanche: Fermé</p>
+                <p>Lundi - Vendredi: 10h00 - 18h00</p>
+                <p>Samedi: 10h00 - 14h00</p>
+                <p>Jours fériés et chômés: 10h00 - 14h00</p>
                 
                 <h3><i class="fas fa-phone"></i> Contact</h3>
-                <p>Téléphone: 05XX XX XX XX</p>
-                <p>Email: contact@natirelcbd.com</p>
+                <p>Téléphone: 0690 24 61 05</p>
+                <p>Email: kimlo971gp@gmail.com</p>
                 
                 <div class="social-links">
                     <a href="https://www.facebook.com/share/1EM3tFNpU1/" target="_blank"><i class="fab fa-facebook-f"></i></a>
@@ -200,15 +287,21 @@
     
     <div class="ad-space">
         <div class="content">
-            <h3>Nouveautés & Promotions</h3>
+            <h3>Suivez-nous sur les réseaux !</h3>
             <p>Suivez-nous sur nos réseaux sociaux pour ne manquer aucune offre exclusive et découvrir nos nouveaux produits en avant-première!</p>
+            <div class="social-cta">
+                <a href="https://www.facebook.com/share/1EM3tFNpU1/" target="_blank" class="social-btn"><i class="fab fa-facebook-f"></i> Facebook</a>
+                <a href="https://www.instagram.com/natirelcbd?utm_source=qr&igsh=bWk0bzk4OHV4bTQz" target="_blank" class="social-btn"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://www.tiktok.com/@natirelcbd?_t=ZN-8uNdc5fEpuw&_r=1" target="_blank" class="social-btn"><i class="fab fa-tiktok"></i> TikTok</a>
+            </div>
         </div>
     </div>
     
     <footer>
         <div class="container">
-            <p>&copy; 2025 Natirel CBD - Tous droits réservés</p>
+            <p>&copy; 2025 NATIRÈL CBD - Tous droits réservés</p>
             <p>Les produits CBD vendus sur ce site contiennent moins de 0,3% de THC conformément à la législation en vigueur.</p>
+            <p>Ce site est réservé aux personnes majeures de plus de 18 ans.</p>
             
             <div class="footer-links">
                 <a href="#">Accueil</a>
